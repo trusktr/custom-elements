@@ -1,22 +1,10 @@
 {
-  "name": "x-tag-core",
-  "description": "X-Tags core library",
+  "name": "custom-elements",
+  "description": "A cross-browser polyfill for the Custom Elements portion of the W3C Web Components specification.",
   "version": "0.8.20",
-  "homepage": "http://www.x-tags.org",
   "repository": {
     "type": "git",
-    "url": "git://github.com/x-tag/core.git"
-  },
-  "scripts": {
-    "test": "grunt test"
-  },
-  "devDependencies": {
-    "grunt": "~0.4.0",
-    "grunt-contrib-jshint": "0.3.0",
-    "grunt-contrib-concat": "~0.1.2",
-    "grunt-contrib-uglify": "~0.1.1",
-    "grunt-tagrelease": "~0.2.0",
-    "grunt-bumpup": "~0.2.0"
+    "url": "https://github.com/oliver-moran/CustomElements.git"
   },
   "dependencies": {}
 }

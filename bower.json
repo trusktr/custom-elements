@@ -1,16 +1,13 @@
 {
-  "name": "x-tag-core",
-  "description": "X-Tag core library for creating custom as defined by the w3c Web Components spec.",
+  "name": "custom-elements",
+  "description": "A cross-browser polyfill for the Custom Elements portion of the W3C Web Components specification.",
   "version": "0.8.20",
   "keywords": [
     "web-components",
     "element",
-    "custom",
-    "core",
-    "x-tag"
+    "custom"
   ],
   "main": [
-    "lib/web-components-polyfills.js",
-    "src/core.js"
+    "src/CustomElements.js"
   ]
 }

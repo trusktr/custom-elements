@@ -1,52 +1,20 @@
-# X-Tag - Custom Elements for Modern Browsers
+Custom elements are a part of the [W3C Web Components](http://w3c.github.io/webcomponents/explainer/) specification ([see spec](http://w3c.github.io/webcomponents/spec/custom/)). They allow you to define and register new HTML tags/elements in your documents. You can then use these tags as regular HTML.
 
-**This is the repository for the core [X-Tag](http://x-tags.org) library.**
+This library polyfills the custom elements API on browsers today. It is a barebones fork of the [X-Tag core library](https://github.com/x-tag/core) from Mozilla ([see website](http://x-tags.org/)). X-Tags in turn uses the [Polymer](https://github.com/Polymer/polymer) polyfills from Google ([see website](http://www.polymer-project.org/)).
 
-Based on the current W3 Web Components [draft][1], X-Tag enables the custom element portion of the proposal.
-Custom elements let you register new tags/elements with the parser, so they are recognized and inflated with
-special abilities you define.
+The aim of this fork is to provide a stripped down version of the polyfill, with zero additional weight.
 
-You can find out more about what X-Tag does, where it works, and how to use it, on the project page: [http://x-tags.org](http://x-tags.org).
+## What’s included? ##
 
-X-Tag (excluding third-party icons or images) is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/.
+There are two source files in the repository:
 
-  [1]: https://dvcs.w3.org/hg/webcomponents/raw-file/tip/explainer/index.html       "W3 Web Components Spec (Draft)"
+- `CustomElements.js`, which polyfills the W3C Web Components custom elements API.
+- `MutationObserver.js`, which polyfills the [MutationObserver](https://developer.mozilla.org/en/docs/Web/API/MutationObserver) API. This is needed for the CustomElements polyfill and additionally polyfills the [WeakMap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap) API.
 
-## Developers
+Each of these files are minified for distributions (see the `dist` directory).
 
-To get started hacking on X-Tag core:
+## How do I use it? ##
 
-    $ git clone https://github.com/x-tag/core x-tag-core
+Including CustomElements.js (or CustomElements.min.js) in your source will polyfill the custom elements API. For browsers that already support CustomMutations, it is not necessary to include CustomMutations.js (CustomMutations.min.js), although it will do harmful if you do (apart from possibly polyfilling the WeakMap API).
 
-    $ cd x-tag-core
-
-    $ git submodule update --init --recursive
-
-    $ npm install   # for devDependencies
-    
-    $ grunt polyfill  # rebuilds polyfill file
-
-    $ grunt build    # output to ./dist
-
-If you are interested in building your own custom elements, you can use our [web-component-stub](https://github.com/x-tag/web-component-stub) as a starting point.
-
-## Tests
-
-Jasmine tests via grunt are not working yet, please open [test/index.html](test/index.html) in your browser to see if everything passes.
-
-
-### Distributable Build
-
-	$ grunt build
-
-	// See ./dist/ directory for the js files that can be used in your project
-
-
-
-### Create your own web components
-
-To learn more about X-Tags visit [x-tags.org](http://x-tags.org).
-
-To create your own component, use our [web-component-stub](https://github.com/x-tag/web-component-stub).
-
-Share your components by adding them to the [Custom Elements Registry](http://customelements.io/) or Bower.
+A simple demo file is located in the `demo` directory. An introduction to the custom elements API (with code examples) is [available on](http://www.html5rocks.com/en/tutorials/webcomponents/customelements/) the HTML5 Rocks website from Google.
