@@ -20,3 +20,9 @@ Each of these files are minified for distributions (see the `dist` directory).
 Including CustomElements.js (or CustomElements.min.js) in your source will polyfill the custom elements API. For browsers that already support CustomMutations, it is not necessary to include CustomMutations.js (CustomMutations.min.js), although it will do harmful if you do (apart from possibly polyfilling the WeakMap API).
 
 A simple demo file is located in the `demo` directory. An introduction to the custom elements API (with code examples) is [available on](http://www.html5rocks.com/en/tutorials/webcomponents/customelements/) the HTML5 Rocks website from Google.
+
+## Licensing ##
+
+This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+Use of this source code is governed by a BSD-style license that can be found in the LICENSE file.
