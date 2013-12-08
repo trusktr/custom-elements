@@ -368,15 +368,6 @@ if (!window.MutationObserver) {
       return null;
     }
 
-    // walk all shadowRoots on a given node.
-    function forRoots(node, cb) {
-      var root = node.shadowRoot;
-      while(root) {
-        forSubtree(root, cb);
-        root = root.olderShadowRoot;
-      }
-    }
-
     // walk the subtree rooted at node, including descent into shadow-roots,
     // applying 'cb' to each element
     function forSubtree(node, cb) {
@@ -385,9 +376,7 @@ if (!window.MutationObserver) {
         if (cb(e)) {
           return true;
         }
-        forRoots(e, cb);
       });
-      forRoots(node, cb);
       //logFlags.dom && node.childNodes && node.childNodes.length && console.groupEnd();
     }
 
@@ -550,8 +539,7 @@ if (!window.MutationObserver) {
 
     function inDocument(element) {
       var p = element;
-      var doc = window.ShadowDOMPolyfill &&
-          window.ShadowDOMPolyfill.wrapIfNeeded(document) || document;
+      var doc = document;
       while (p) {
         if (p == doc) {
           return true;
