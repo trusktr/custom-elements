@@ -19,7 +19,7 @@ Each of these files are minified for distributions (see the `dist` directory).
 
 Including `CustomElements.js` (or `CustomElements.min.js`) in your source will polyfill the Custom Elements API. For browsers that already support CustomMutations, it is not necessary to include `CustomMutations.js` (`CustomMutations.min.js`), although it will do no harm if you do (apart from possibly polyfilling the WeakMap API unecessarily).
 
-Sample code is located in the `demo` directory. An introduction to the Custom Elements API (with code examples) is [available on](http://www.html5rocks.com/en/tutorials/webcomponents/customelements/) the HTML5 Rocks website from Google.
+Sample code is located in the `example` directory. An introduction to the Custom Elements API (with code examples) is [available on](http://www.html5rocks.com/en/tutorials/webcomponents/customelements/) the HTML5 Rocks website from Google.
 
 ## Licensing ##
 
