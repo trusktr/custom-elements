@@ -26,3 +26,5 @@ Sample code is located in the `demo` directory. An introduction to the Custom El
 This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 Use of this source code is governed by a BSD-style license that can be found in the LICENSE file.
+
+Thanks to [Arron Schaar](https://github.com/pennyfx) and [Daniel Buchner](https://github.com/csuwildcat) of Mozilla for their help.
