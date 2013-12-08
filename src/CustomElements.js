@@ -616,7 +616,7 @@ if (!window.MutationObserver) {
     // observe document for dom changes
     observeDocument();
 
-    window.addEventListener('load', function() {
+    window.addEventListener('DOMContentLoaded', function() {
       upgradeDocument();
     });
   })(scope);
