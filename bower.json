@@ -1,11 +1,13 @@
 {
   "name": "custom-elements",
   "description": "A cross-browser polyfill for the Custom Elements portion of the W3C Web Components specification.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
-    "web-components",
-    "element",
-    "custom"
+    "html",
+    "web",
+    "components",
+    "custom",
+    "element"
   ],
   "main": [
     "./dist/CustomElements.min.js",
