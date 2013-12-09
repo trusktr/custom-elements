@@ -3,7 +3,7 @@
 
 	<head>
 
-		<title>Custom Elements Polyfill Demo</title>
+		<title>Custom Elements Polyfill Demo (Lotto)</title>
 		<meta charset="utf-8" />
 
 		<script type="text/javascript" src="../dist/MutationObserver.min.js"></script>
@@ -13,7 +13,7 @@
 
 		// create the x-lotto prototype
 		var XLottoPrototype = Object.create(HTMLElement.prototype);
-		XLottoPrototype.enteredViewCallback = pickResults;
+		XLottoPrototype.createdCallback = pickResults;
 		XLottoPrototype.attributeChangedCallback = pickResults;
 
 		// register the x-lotto element with the document
