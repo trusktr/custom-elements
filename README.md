@@ -1,4 +1,4 @@
-# Custom Elements #
+# Custom Elements # 
 
 Custom elements are a part of the [W3C Web Components](http://w3c.github.io/webcomponents/explainer/) specification ([see spec](http://w3c.github.io/webcomponents/spec/custom/)). They allow you to define and register new HTML tags/elements in your documents. You can then use these tags as regular HTML.
 
